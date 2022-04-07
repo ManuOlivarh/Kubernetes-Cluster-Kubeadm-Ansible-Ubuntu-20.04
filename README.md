@@ -182,7 +182,7 @@ kubectl get nodes
  
  ## Worker Nodes Config
  
- 
+ ```sh
  ---
 - hosts: control_plane
   become: yes
@@ -205,3 +205,5 @@ kubectl get nodes
       args:
         chdir: $HOME
         creates: node_joined.txt
+       
+ ```
